@@ -1,42 +1,109 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Custom Navbar</title>
-    <link rel="stylesheet" href="css/index.css" />
-  </head>
-  <body>
-    <nav class="navbar">
-      <a href="#" class="navbar-brand">
-        <!-- <img src="your-logo.png" alt="Logo" /> -->
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="45"
-          height="45"
-          viewBox="0 0 24 24"
-          fill="none"
-          stroke="currentColor"
-          stroke-width="2"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          class="feather feather-code"
-        >
-          <circle cx="12" cy="12" r="10" fill="#ffffff" />
-          <polyline points="16 18 22 12 16 6" stroke="#343a40"></polyline>
-          <polyline points="8 6 2 12 8 18" stroke="#343a40"></polyline>
-        </svg>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Custom Navbar</title>
+        <link rel="stylesheet" href="css/index.css" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+    </head>
+    <body>
+        <header>
+            <nav class="navbar">
+                <a href="#" class="navbar-brand">
+                    <img src="img/logo-white.svg" alt="Logo" />
+                    Ms.Code
+                </a>
+                <ul class="navbar-menu">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <a href="#" class="navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+        </header>
 
-        Your Brand Name
-      </a>
-      <ul class="navbar-menu">
-        <li><a href="#" class="active">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
+        <section>
+            <h1 class="section-title">
+                Welcome to My Web Page <i class="far fa-face-laugh-beam"></i>
+            </h1>
+            <span class="section-subtitle"
+                >Website for learning about programming.</span
+            >
+        </section>
 
-    <script src="js/index.js"></script>
-  </body>
+        <section class="content">
+            <section class="blog-section">
+                <article class="blog-post">
+                    <h1 class="section-title">
+                        10 Tips untuk Meningkatkan Produktivitas Anda
+                    </h1>
+                    <img
+                        src="gambar/tips-produktivitas.jpg"
+                        alt="Tips Produktivitas"
+                    />
+                    <p>
+                        Produktivitas adalah kunci keberhasilan dalam kehidupan
+                        sehari-hari. Dengan menerapkan beberapa tips sederhana,
+                        Anda dapat meningkatkan produktivitas Anda secara
+                        signifikan.
+                    </p>
+                    <p>
+                        Berikut adalah 10 tips untuk meningkatkan produktivitas
+                        Anda:
+                    </p>
+                    <ol>
+                        <li>Buat daftar tugas harian dan prioritaskan</li>
+                        <li>Atur jadwal dengan bijak</li>
+                        <li>Hindari multitasking</li>
+                        <li>Manfaatkan teknologi untuk otomatisasi</li>
+                        <li>
+                            Beristirahat secara teratur untuk merilekskan
+                            pikiran dan tubuh
+                        </li>
+                        <li>
+                            Berolahraga secara teratur untuk meningkatkan energi
+                        </li>
+                        <li>Makan makanan sehat dan minum air yang cukup</li>
+                        <li>Berikan diri Anda hadiah untuk pencapaian kecil</li>
+                        <li>
+                            Hindari gangguan dan tetap fokus pada tugas yang
+                            sedang Anda kerjakan
+                        </li>
+                        <li>
+                            Jadilah fleksibel dan siap untuk menyesuaikan
+                            rencana jika diperlukan
+                        </li>
+                    </ol>
+                </article>
+            </section>
+            <aside class="side-form">
+                <h2>Contact Us</h2>
+                <form action="#" method="post">
+                    <label for="name">Nama:</label>
+                    <input type="text" id="name" name="name" required />
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required />
+
+                    <label for="message">Pesan:</label>
+                    <textarea id="message" name="message" required></textarea>
+
+                    <button type="submit">Kirim</button>
+                </form>
+            </aside>
+        </section>
+
+        <script src="js/index.js"></script>
+    </body>
 </html>

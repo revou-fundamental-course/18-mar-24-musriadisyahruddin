@@ -1,109 +1,321 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Custom Navbar</title>
-        <link rel="stylesheet" href="css/index.css" />
-        <link
-            rel="stylesheet"
-            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-        />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
-    </head>
-    <body>
-        <header>
-            <nav class="navbar">
-                <a href="#" class="navbar-brand">
-                    <img src="img/logo-white.svg" alt="Logo" />
-                    Ms.Code
-                </a>
-                <ul class="navbar-menu">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-                <a href="#" class="navbar-toggle">
-                    <i class="fas fa-bars"></i>
-                </a>
-            </nav>
-        </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Musriadi Syahruddin</title>
+    <link rel="shortcut icon" href="img/logo-dark.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="#" class="navbar-brand">
+          <img src="img/logo-white.svg" alt="Logo" />
+          Ms.Code
+        </a>
+        <ul class="navbar-menu">
+          <li><a href="#home" class="active">Home</a></li>
+          <li><a href="#testimoni">Testimoni</a></li>
+          <li><a href="#subscribe">Subscribe</a></li>
+          <li class="display-sm"><a href="#contact">Contact</a></li>
+        </ul>
+        <a href="#" class="navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </a>
+      </nav>
+    </header>
 
-        <section>
+    <section id="home">
+      <h1 class="section-title">
+        Welcome to My Web Page <i class="far fa-face-laugh-beam"></i>
+      </h1>
+      <span class="section-subtitle"
+        >Website for learning about programming.</span
+      >
+
+      <section class="content">
+        <section class="blog-section">
+          <article class="blog-post">
             <h1 class="section-title">
-                Welcome to My Web Page <i class="far fa-face-laugh-beam"></i>
+              7 Tips untuk Meningkatkan Produktivitas dalam Pemrograman
             </h1>
-            <span class="section-subtitle"
-                >Website for learning about programming.</span
-            >
+            <div class="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item">
+                  <img src="img/image-1.jpg" alt="Slide 1" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/image-2.jpg" alt="Slide 2" />
+                </div>
+                <div class="carousel-item">
+                  <img src="img/image-3.jpg" alt="Slide 3" />
+                </div>
+              </div>
+            </div>
+            <p>
+              Pemrograman adalah keterampilan yang membutuhkan fokus dan
+              konsentrasi tinggi. Dengan menerapkan beberapa tips sederhana,
+              Anda dapat meningkatkan produktivitas Anda dalam pemrograman.
+            </p>
+            <p>
+              Berikut adalah 7 tips untuk meningkatkan produktivitas Anda dalam
+              pemrograman:
+            </p>
+            <ol>
+              <li>Rencanakan sebelum mulai kode</li>
+              <li>Prioritaskan tugas Anda</li>
+              <li>Gunakan alat bantu yang tepat</li>
+              <li>Belajarlah dari kode orang lain</li>
+              <li>Minta bantuan jika Anda terjebak</li>
+              <li>Lakukan istirahat singkat secara teratur</li>
+              <li>Teruslah belajar dan tingkatkan keterampilan Anda</li>
+            </ol>
+
+            <p class="blog-quotes">
+              "Programming lebih nyaman dengan Ms.Coding"
+            </p>
+
+            <div class="creator">
+              <img src="img/img_avatar.png" alt="avatar" class="creator-img" />
+              <div class="creator-detail">
+                <h5 class="creator-name">Musriadi Syahruddin</h5>
+                <span class="creator-info">Freelancer, 25</span>
+              </div>
+            </div>
+            <div class="border-top">
+              <h3>Postingan lainnya</h3>
+              <div class="other-post">
+                <a href="#" class="other-post-item">
+                  <img src="img/image-1.jpg" alt="" class="other-post-image" />
+                  <span class="other-post-detail">
+                    <h4>Lorem ipsum dolor sit amet</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Molestiae at amet aspernatur voluptates. Perspiciatis,
+                    maxime. Quos excepturi porro tempore totam, voluptatibus nam
+                    veritatis non repudiandae odio accusantium cupiditate
+                    tenetur cum?</span
+                  >
+                </a>
+                <a href="#" class="other-post-item">
+                  <img src="img/image-2.jpg" alt="" class="other-post-image" />
+                  <span class="other-post-detail">
+                    <h4>Lorem ipsum</h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maxime dolorem ea.</span
+                  >
+                </a>
+                <a href="#" class="other-post-item">
+                  <img src="img/image-3.jpg" alt="" class="other-post-image" />
+                  <span class="other-post-detail">
+                    <h4>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </h4>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Iste maxime dolorem ea.</span
+                  >
+                </a>
+              </div>
+            </div>
+          </article>
         </section>
+        <aside class="side-form">
+          <h2 class="section-title">Contact Us</h2>
+          <span class="section-subtitle"
+            >Kami akan menghubungi anda 1x24 Jam setelah data kami terima</span
+          >
+          <hr />
+          <form action="#" method="post">
+            <label class="form-label" for="name">Nama:</label>
+            <input
+              class="form-input"
+              type="text"
+              id="name"
+              name="name"
+              autocomplete="off"
+              placeholder="Nama Lengkap"
+              required
+            />
 
-        <section class="content">
-            <section class="blog-section">
-                <article class="blog-post">
-                    <h1 class="section-title">
-                        10 Tips untuk Meningkatkan Produktivitas Anda
-                    </h1>
-                    <img
-                        src="gambar/tips-produktivitas.jpg"
-                        alt="Tips Produktivitas"
-                    />
-                    <p>
-                        Produktivitas adalah kunci keberhasilan dalam kehidupan
-                        sehari-hari. Dengan menerapkan beberapa tips sederhana,
-                        Anda dapat meningkatkan produktivitas Anda secara
-                        signifikan.
-                    </p>
-                    <p>
-                        Berikut adalah 10 tips untuk meningkatkan produktivitas
-                        Anda:
-                    </p>
-                    <ol>
-                        <li>Buat daftar tugas harian dan prioritaskan</li>
-                        <li>Atur jadwal dengan bijak</li>
-                        <li>Hindari multitasking</li>
-                        <li>Manfaatkan teknologi untuk otomatisasi</li>
-                        <li>
-                            Beristirahat secara teratur untuk merilekskan
-                            pikiran dan tubuh
-                        </li>
-                        <li>
-                            Berolahraga secara teratur untuk meningkatkan energi
-                        </li>
-                        <li>Makan makanan sehat dan minum air yang cukup</li>
-                        <li>Berikan diri Anda hadiah untuk pencapaian kecil</li>
-                        <li>
-                            Hindari gangguan dan tetap fokus pada tugas yang
-                            sedang Anda kerjakan
-                        </li>
-                        <li>
-                            Jadilah fleksibel dan siap untuk menyesuaikan
-                            rencana jika diperlukan
-                        </li>
-                    </ol>
-                </article>
-            </section>
-            <aside class="side-form">
-                <h2>Contact Us</h2>
-                <form action="#" method="post">
-                    <label for="name">Nama:</label>
-                    <input type="text" id="name" name="name" required />
+            <label class="form-label" for="email">Email:</label>
+            <input
+              class="form-input"
+              type="email"
+              id="email"
+              name="email"
+              autocomplete="off"
+              placeholder="example@gmail.com"
+              required
+            />
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required />
+            <label class="form-label" for="message">Pesan:</label>
+            <textarea
+              class="form-input"
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="Tulis pesan anda"
+              required
+            ></textarea>
 
-                    <label for="message">Pesan:</label>
-                    <textarea id="message" name="message" required></textarea>
+            <button class="form-button" type="submit">Kirim</button>
+          </form>
+        </aside>
+      </section>
+    </section>
 
-                    <button type="submit">Kirim</button>
-                </form>
-            </aside>
-        </section>
+    <section id="testimoni">
+      <header>
+        <h1 class="section-title">TESTIMONI</h1>
+      </header>
 
-        <script src="js/index.js"></script>
-    </body>
+      <section>
+        <div class="testimoni">
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-1.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-2.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-3.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+          <div class="border-top"></div>
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-1.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-2.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+          <div class="testimoni-item">
+            <div class="testimoni-content">
+              <div class="creator">
+                <img
+                  src="img/image-3.jpg"
+                  alt=""
+                  class="creator-img"
+                  style="min-height: 50px; width: 50px"
+                />
+                <div class="creator-detail">
+                  <h5 class="creator-name">Test</h5>
+                  <div class="creator-info">example@gmail.com</div>
+                </div>
+              </div>
+              <div class="testimoni-message">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Et
+                animi a incidunt quam rerum quo architecto, enim quod aliquam
+                sit itaque tempora fugit facilis ut! Ducimus vitae quod harum
+                modi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
 </html>

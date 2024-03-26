@@ -1,6 +1,10 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -379,6 +383,70 @@ hr {
   margin-top: 8px;
 }
 
+.subscribe {
+  text-align: center;
+  padding: 3.25rem 1.25rem;
+  padding-top: 5px;
+}
+
+.form-subscribe {
+  display: flex;
+  margin-top: 3.25rem;
+  width: 50%;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-subscribe .form-input,
+.form-subscribe .form-button {
+  line-height: 32px;
+  margin: 0 5px;
+}
+
+.form-subscribe .form-input {
+  width: 80%;
+}
+.form-subscribe .form-button {
+  width: 20%;
+}
+
+.subscribe .section-title {
+  margin-top: 0.5rem;
+}
+
+footer {
+  background-color: #343a40;
+  color: #fff;
+  padding: 24px 0;
+  text-align: center;
+  width: 100%;
+}
+
+footer .footer-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 8px;
+}
+
+.footer-logo img {
+  margin-right: 12px;
+  width: 32px;
+}
+
+.footer-logo h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+footer p {
+  margin: 0;
+  opacity: 0.7;
+}
+
 @media screen and (max-width: 768px) {
   .display-sm {
     display: inline-block !important;
@@ -442,4 +510,35 @@ hr {
     flex: 0 0 auto;
     width: 100%;
   }
+
+  .form-subscribe {
+    width: 100%;
+  }
+}
+
+#scrollToTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #fff;
+  color: #343a40;
+  border: 0;
+  border-radius: 20px;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  transition: opacity 0.5s ease;
+  opacity: 0;
+  height: 40px;
+  width: 40px;
+  box-shadow: 0 0.1rem 0.5rem rgba(0, 0, 0, 0.5);
+}
+
+#scrollToTopBtn.active {
+  opacity: 1;
 }

@@ -98,7 +98,18 @@ forms.forEach(function (form) {
 
       form.classList.add("was-validated");
       if (form.checkValidity()) {
-        form.submit();
+        // Karena halaman ini hanya 1 dan untuk uji coba, maka fungsi submit saya alihkan ke alert
+        event.preventDefault();
+        event.stopPropagation();
+
+        let data = serializeForm(form);
+        let pesanAlert = `\nForm berhasil disubmit dengan data:
+
+    1. Nama: ${data.nama}
+    2. Email: ${data.email}
+    3. Pesan: ${data.pesan}`;
+        alert(pesanAlert);
+        window.location.reload();
       } else {
         event.preventDefault();
         event.stopPropagation();
@@ -116,4 +127,27 @@ function customCheckValidity(input) {
     input.classList.add("is-valid");
     input.classList.remove("is-invalid");
   }
+}
+
+function serializeForm(form) {
+  var formData = {};
+  var formElements = form.elements;
+
+  for (var i = 0; i < formElements.length; i++) {
+    var element = formElements[i];
+    var elementName = element.name;
+    var elementValue = element.value;
+
+    if (elementName && !element.disabled) {
+      if (element.type === "radio" || element.type === "checkbox") {
+        if (element.checked) {
+          formData[elementName] = elementValue;
+        }
+      } else {
+        formData[elementName] = elementValue;
+      }
+    }
+  }
+
+  return formData;
 }

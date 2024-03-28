@@ -80,3 +80,40 @@ menuLinks.forEach(function (menuLink) {
     }
   });
 });
+
+var forms = document.querySelectorAll("form.needs-validation");
+
+forms.forEach(function (form) {
+  form.addEventListener(
+    "submit",
+    function (event) {
+      form
+        .querySelectorAll("input, select, textarea")
+        .forEach(function (input) {
+          customCheckValidity(input);
+          input.addEventListener("keyup", function () {
+            customCheckValidity(input);
+          });
+        });
+
+      form.classList.add("was-validated");
+      if (form.checkValidity()) {
+        form.submit();
+      } else {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+    },
+    false
+  );
+});
+
+function customCheckValidity(input) {
+  if (!input.checkValidity()) {
+    input.classList.add("is-invalid");
+    input.classList.remove("is-valid");
+  } else {
+    input.classList.add("is-valid");
+    input.classList.remove("is-invalid");
+  }
+}
